@@ -1,0 +1,175 @@
+.primary-button {
+  padding: 0.75rem 2rem;
+}
+.primary-button {
+  grid-column-gap: 0.6rem;
+  background-image: radial-gradient(
+      circle at 50% 85.69%,
+      #8fe566,
+      #8fe56600 77.6%
+    ),
+    radial-gradient(circle at 50% 111.57%, #72e98a, #72e98a00 56%),
+    radial-gradient(circle at 50% 132.04%, #0acf83, #0acf8300 69%),
+    linear-gradient(#7ef98b00 21%, #7ef98b 93.49%),
+    linear-gradient(#0acf83, #0acf83);
+  border-radius: 0.375rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 2px 2px #dddddd80, inset 0 -2px #13ae72,
+    0 0 0 4px #dddddd0d, 0 20px 120px -10px #0acf83cc;
+}
+.button-link.w-inline-block {
+  text-decoration: none;
+}
+.button-link {
+  text-decoration: none;
+}
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+.primary-button:hover .primary-button-hover-overlay {
+  opacity: 1;
+}
+.primary-button-pressed-overlay {
+  z-index: 2;
+  opacity: 0;
+  background-color: #0000;
+  transition: opacity 0.2s;
+  position: absolute;
+  inset: 0%;
+}
+.primary-button-hover-overlay {
+  z-index: 1;
+  opacity: 0;
+  background-image: radial-gradient(circle at 176% 143%, #8fe566, #8fe56600 77%),
+    radial-gradient(circle at 138% 79%, #fff, #fff0),
+    radial-gradient(circle at 50% 254.79%, #fff, #fff0),
+    linear-gradient(247deg, #7ef98b 48%, #7ef98b00 92%),
+    linear-gradient(#0acf83, #0acf83);
+  transition: opacity 0.2s;
+  position: absolute;
+  inset: 0%;
+}
+.primary-btn-text {
+  z-index: 3;
+  color: #222;
+  text-align: center;
+  letter-spacing: -0.36px;
+  font-family: Bricolage Grotesque, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+  position: relative;
+}
+.secondary-btn_wrap {
+  z-index: 3;
+  width: 1.75rem;
+  position: relative;
+  overflow: hidden;
+}
+.primary-button:not(:hover) .secondary-btn_icon-wrap {
+  animation: translateAnimationOut 0.3s ease;
+}
+
+.secondary-btn_icon {
+  color: #1a2224;
+  flex: none;
+  width: 1.25rem;
+}
+.secondary-btn_icon-wrap {
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  transform: translate(-100%);
+}
+.primary-button:active .primary-button-pressed-overlay {
+  background: radial-gradient(
+      176.56% 143.54% at 100% 0%,
+      #fff 0%,
+      rgba(255, 255, 255, 0) 77.6%
+    ),
+    radial-gradient(
+      36.12% 91.37% at 97.38% 0%,
+      #fff 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(
+      203.16% 254.79% at 100% -63.36%,
+      #fff 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(288deg, #fff 75.26%, rgba(255, 255, 255, 0) 119.83%),
+    #0acf83;
+  opacity: 1;
+}
+@keyframes translateAnimationIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+/* Define the animation for hover-out */
+@keyframes translateAnimationOut {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.primary-button:hover .secondary-btn_icon-wrap {
+  animation: translateAnimationIn 0.3s ease;
+}
+.primary-button:not(:hover) .secondary-btn_icon-wrap {
+  animation: translateAnimationOut 0.3s ease;
+}
+
+/* Royal Blue Theme */
+.primary-button {
+  background-image: radial-gradient(
+      circle at 50% 85.69%,
+      #3b82f6,
+      #3b82f600 77.6%
+    ),
+    radial-gradient(circle at 50% 111.57%, #1e40af, #1e40af00 56%),
+    radial-gradient(circle at 50% 132.04%, #2563eb, #2563eb00 69%),
+    linear-gradient(#2563eb00 21%, #2563eb 93.49%),
+    linear-gradient(#1e40af, #1e40af);
+  box-shadow: inset 0 2px 2px #00000040, inset 0 -2px #1e40af,
+    0 0 0 4px #0000000d, 0 20px 120px -10px #3b82f6cc;
+}
+.primary-button-hover-overlay {
+  background-image: radial-gradient(circle at 176% 143%, #3b82f6, #3b82f600 77%),
+    radial-gradient(circle at 138% 79%, #ffffff20, #ffffff00),
+    radial-gradient(circle at 50% 254.79%, #ffffff10, #ffffff00),
+    linear-gradient(247deg, #2563eb 48%, #2563eb00 92%),
+    linear-gradient(#1e40af, #1e40af);
+}
+.primary-button:active .primary-button-pressed-overlay {
+  background: radial-gradient(
+      176.56% 143.54% at 100% 0%,
+      #ffffff10 0%,
+      rgba(255, 255, 255, 0) 77.6%
+    ),
+    radial-gradient(
+      36.12% 91.37% at 97.38% 0%,
+      #ffffff10 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(
+      203.16% 254.79% at 100% -63.36%,
+      #ffffff20 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(288deg, #ffffff15 75.26%, rgba(255, 255, 255, 0) 119.83%),
+    #2563eb;
+}

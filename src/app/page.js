@@ -33,7 +33,8 @@ export default function Home() {
       { selector: ".hero-content_btn-wrapper", delay: 0.2 },
       { selector: ".hero_tool_icon-wrap.left", delay: 0.3, x: -50 },
       { selector: ".hero_tool_icon-wrap.right", delay: 0.3, x: 50 },
-      { selector: ".hero_tool-wrapper.mobile", delay: 0.3 },
+      { selector: ".hero_tool_icon-wrap.left.mobile", delay: 0.3, x: -50 },
+      { selector: ".hero_tool_icon-wrap.right.mobile", delay: 0.3, x: 50 },
     ];
 
     // Animate all elements on scroll
@@ -41,7 +42,7 @@ export default function Home() {
       const element = document.querySelector(selector);
       if (!element) return;
 
-      gsap.set(element, { opacity: 0, visibility: "hidden" });
+      gsap.set(element, { opacity: 0, visibility: "hidden", "z-index": 10 });
 
       gsap.fromTo(
         element,
@@ -62,7 +63,9 @@ export default function Home() {
         }
       );
     });
-    gsap.utils.toArray(".fade-up-desktop").forEach((element, index) => {
+
+    // Animation for .fade-up-desktop class
+    gsap.utils.toArray(".fade-up-desktop").forEach((element) => {
       gsap.set(element, { opacity: 0, visibility: "hidden" });
 
       gsap.fromTo(
@@ -82,7 +85,9 @@ export default function Home() {
         }
       );
     });
-    gsap.utils.toArray(".fade-in").forEach((element, index) => {
+
+    // Animation for .fade-in class
+    gsap.utils.toArray(".fade-in").forEach((element) => {
       gsap.set(element, { opacity: 0, visibility: "hidden" });
 
       gsap.fromTo(
@@ -102,7 +107,9 @@ export default function Home() {
         }
       );
     });
-    gsap.utils.toArray(".fade-up").forEach((element, index) => {
+
+    // Animation for .fade-up class
+    gsap.utils.toArray(".fade-up").forEach((element) => {
       gsap.set(element, { opacity: 0, visibility: "hidden" });
 
       gsap.fromTo(
@@ -122,6 +129,8 @@ export default function Home() {
         }
       );
     });
+
+    // Animation for .scale-up class
     gsap.utils.toArray(".scale-up").forEach((element) => {
       gsap.set(element, { opacity: 0, scale: 0, visibility: "hidden" });
 
@@ -129,10 +138,11 @@ export default function Home() {
         element,
         { opacity: 0, scale: 0, visibility: "hidden" }, // Scale up
         {
+          delay: 0.8,
           opacity: 1,
           scale: 1,
           visibility: "visible",
-          duration: 1,
+          duration: 0.8,
           ease: "power2.out",
           scrollTrigger: {
             trigger: element,

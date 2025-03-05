@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
+import WhiteArrowButton from "../WhiteArrowButton/WhiteArrowButton";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -17,6 +18,7 @@ function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <header className={`section_navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-embed w-embed"></div>
@@ -105,7 +107,6 @@ function Navbar() {
             role="navigation"
             id="w-node-d5229618-d2f9-dcdf-f238-806b9aeacf91-9aeacf7f"
             className="navbar_menu w-nav-menu"
-            data-nav-menu-open=""
           >
             <div className="navbar_menu-wrap">
               <div className="navbar_menu-top">
@@ -227,7 +228,7 @@ function Navbar() {
                 </a>
               </div>
               <div className="mobile-menu_bottom-v2">
-                <a href="/contact" className="button-link w-inline-block">
+                {/* <a href="/contact" className="button-link w-inline-block">
                   <div className="hide w-embed"></div>
                   <button type="" className="secondary-button">
                     <div className="secondary-btn-text">Contact us</div>
@@ -262,7 +263,8 @@ function Navbar() {
                       </div>
                     </div>
                   </button>
-                </a>
+                </a> */}
+                <WhiteArrowButton txt="Start Project" />
               </div>
             </div>
           </nav>
@@ -336,7 +338,21 @@ function Navbar() {
               aria-haspopup="menu"
               aria-expanded="true"
             >
-              <div className="navbar-humburger_button-open-v2">
+              <div
+                className="navbar-humburger_button-open-v2"
+                onClick={() => {
+                  const menu = document.querySelector(".w-nav-menu");
+                  const hamBtn = document.querySelector(
+                    ".navbar-humburger_button-open-v2"
+                  );
+                  const closeBtn = document.querySelector(
+                    ".navbar-humburger_button-close-copy "
+                  );
+                  menu.style.display = "block";
+                  hamBtn.style.display = "none";
+                  closeBtn.style.display = "block";
+                }}
+              >
                 <div className="navbar-menu-content">
                   <div className="button-bg-1 menu"></div>
                   <svg
@@ -370,7 +386,21 @@ function Navbar() {
                   </svg>
                 </div>
               </div>
-              <div className="navbar-humburger_button-close-copy">
+              <div
+                className="navbar-humburger_button-close-copy"
+                onClick={() => {
+                  const menu = document.querySelector(".w-nav-menu");
+                  const hamBtn = document.querySelector(
+                    ".navbar-humburger_button-open-v2"
+                  );
+                  const closeBtn = document.querySelector(
+                    ".navbar-humburger_button-close-copy"
+                  );
+                  menu.style.display = "none";
+                  hamBtn.style.display = "block";
+                  closeBtn.style.display = "none";
+                }}
+              >
                 <div className="navbar-menu-content">
                   <div className="button-bg-1 menu"></div>
                   <svg

@@ -82,12 +82,12 @@ function Hero() {
             their visitors to paying customers.
           </p>
         </div>
-        <div className="hero-content_btn-wrapper">
+        <div className="hero-content_btn-wrapper fadeup">
           <BlueArrowButton />
         </div>
       </div>
       <div className="hero_tool-wraper mobile">
-        <div className="hero_tool_icon-wrap left">
+        <div className="hero_tool_icon-wrap left mobile">
           <img
             src="https://cdn.prod.website-files.com/65fb34308fabd933e87cbcb1/660496dd88e87ad9be7678f9_figma-cirle.webp"
             loading="lazy"
@@ -101,7 +101,7 @@ function Hero() {
             className="hero_tool_icon"
           />
         </div>
-        <div className="hero_tool_icon-wrap right">
+        <div className="hero_tool_icon-wrap right mobile">
           <img
             src="https://cdn.prod.website-files.com/65fb34308fabd933e87cbcb1/660496d3ccf8e10df385076e_webflow-circle.webp"
             loading="lazy"

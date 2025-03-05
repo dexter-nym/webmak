@@ -1,5 +1,4 @@
 .section_steps {
-  min-height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -100,9 +99,6 @@
   display: flex;
   position: relative;
 }
-svg:not(:root) {
-  overflow: hidden;
-}
 .steps_left-line {
   color: #ececec;
   width: 35rem;
@@ -110,20 +106,11 @@ svg:not(:root) {
   top: -10.5rem;
   left: -6rem;
 }
-svg:not(:root) {
-  overflow: hidden;
-}
 .steps-rught-line {
   color: #ececec;
   position: absolute;
-  bottom: -140%;
+  bottom: -130%;
   right: -6rem;
-}
-element.style {
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
-  opacity: 1;
 }
 .section-info_primary-text {
   background: linear-gradient(
@@ -164,13 +151,6 @@ element.style {
   font-size: 1.25rem;
   line-height: 1.6;
 }
-p {
-  margin-bottom: 0;
-}
-p {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
 .container-medium,
 .container-small,
 .container-large {
@@ -196,12 +176,6 @@ p {
   flex: none;
   width: 25%;
   position: relative;
-}
-element.style {
-  transform: translate3d(0px, 100px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
-  opacity: 0;
 }
 .steps_card {
   background-color: #fff;
@@ -242,22 +216,9 @@ element.style {
   display: flex;
   position: relative;
 }
-element.style {
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
-}
-svg:not(:root) {
-  overflow: hidden;
-}
 .steps_card_icon {
   width: 1.5rem;
   height: 1.5rem;
-}
-element.style {
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
 }
 .steps_card_title {
   letter-spacing: -0.48px;
@@ -295,18 +256,6 @@ element.style {
   bottom: 0;
   right: 0;
 }
-element.style {
-  width: 100%;
-  height: 100%;
-  transform: translate3d(0px, 0px, 0px);
-  content-visibility: visible;
-}
-svg:not(:root) {
-  overflow: hidden;
-}
-svg:not(:root) {
-  overflow: hidden;
-}
 .steps_card_image_line {
   z-index: 0;
   color: #939393;
@@ -330,6 +279,15 @@ svg:not(:root) {
 }
 .steps_border-box._1 {
   height: 16.5625rem;
+}
+.steps_border-box._2 {
+  height: 11.4rem;
+}
+.steps_border-box._3 {
+  height: 6.875rem;
+}
+.steps_border-box._4 {
+  height: 15rem;
 }
 .steps_border-box {
   border: 1px solid #e7e7e799;

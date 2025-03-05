@@ -76,7 +76,7 @@ export default function Home() {
           ease: "power2.out",
           scrollTrigger: {
             trigger: element,
-            start: "top 90%",
+            start: "top 85%",
             toggleActions: "play none none reverse",
           },
         }
@@ -96,7 +96,7 @@ export default function Home() {
           ease: "power2.out",
           scrollTrigger: {
             trigger: element,
-            start: "top 90%",
+            start: "top 85%",
             toggleActions: "play none none reverse",
           },
         }
@@ -116,7 +116,7 @@ export default function Home() {
           ease: "power2.out",
           scrollTrigger: {
             trigger: element,
-            start: "top 90%",
+            start: "top 85%",
             toggleActions: "play none none reverse",
           },
         }

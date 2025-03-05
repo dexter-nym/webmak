@@ -1,6 +1,5 @@
 import React from "react";
 import "./SeventhSection.css";
-
 function SeventhSection() {
   return (
     <section id="reviews" className="section_testimonial">
@@ -924,5 +923,4 @@ function SeventhSection() {
     </section>
   );
 }
-
 export default SeventhSection;

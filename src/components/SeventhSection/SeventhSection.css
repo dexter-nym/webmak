@@ -291,14 +291,14 @@ h2 {
 .marquee-pane.loop-move-left {
   justify-content: flex-start;
   align-items: stretch;
-  animation-duration: 35s;
+  /* animation-duration: 35s; */
 }
 .marquee-pane {
   justify-content: flex-start;
   align-items: center;
   display: flex;
 }
-.loop-move-left {
+/* .loop-move-left {
   animation-name: loop-move-left;
   animation-duration: 5s;
   animation-timing-function: linear;
@@ -306,12 +306,13 @@ h2 {
   animation-direction: normal;
   animation-play-state: running;
   animation-fill-mode: both;
-}
-@keyframes loop-move-left {
+} */
+/* @keyframes loop-move-left {
   100% {
     transform: translateX(-100%);
   }
-}
+} */
+
 .result-card_item {
   flex-flow: row;
   display: flex;
@@ -477,5 +478,4 @@ h2 {
     min-height: 2rem;
     display: block;
   }
-  
 }

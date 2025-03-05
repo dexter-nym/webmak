@@ -64,28 +64,6 @@ export default function Home() {
       );
     });
 
-    // Animation for .fade-up-desktop class
-    gsap.utils.toArray(".fade-up-desktop").forEach((element) => {
-      gsap.set(element, { opacity: 0, visibility: "hidden" });
-
-      gsap.fromTo(
-        element,
-        { opacity: 0, y: 50, visibility: "hidden" }, // Fade up
-        {
-          opacity: 1,
-          y: 0,
-          visibility: "visible",
-          duration: 0.5,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: element,
-            start: "top 85%",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
-    });
-
     // Animation for .fade-in class
     gsap.utils.toArray(".fade-in").forEach((element) => {
       gsap.set(element, { opacity: 0, visibility: "hidden" });

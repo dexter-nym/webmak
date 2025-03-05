@@ -1,7 +1,10 @@
 import React from "react";
 import "./FirstSection.css";
+import { useIntersection } from "@/hooks/useIntersection";
 
 function FirstSection() {
+  useIntersection();
+  useIntersection("fadeup");
   return (
     <>
       <section className="section_steps">
@@ -23,7 +26,7 @@ function FirstSection() {
             <div className="container-medium">
               <div className="steps_heading-wrap relative">
                 <div className="section-info-wrap">
-                  <div className="fade-up">
+                  <div className="fadeup">
                     <h2 className="section-info_primary-text">
                       Four steps to build a website that needs{" "}
                       <span className="heading-text-italic">
@@ -31,7 +34,7 @@ function FirstSection() {
                       </span>
                     </h2>
                   </div>
-                  <div className="fade-in">
+                  <div className="fadeup">
                     <p className="sub-title-border background-color-white">
                       See how we turn your abstract ideas into tangible results
                     </p>
@@ -68,7 +71,7 @@ function FirstSection() {
             <div className="container-large">
               <div className="steps_wrapper">
                 <div className="steps_card-wrapper _1">
-                  <div className="fade-up-desktop">
+                  <div className="fade-up-desktop fadeup">
                     <div
                       data-w-id="64205669-bc89-99ef-b9eb-e5b51f1839d8"
                       className="steps_card"
@@ -298,7 +301,7 @@ function FirstSection() {
                   <div className="steps_border-box _1"></div>
                 </div>
                 <div className="steps_card-wrapper _2">
-                  <div className="fade-up-desktop">
+                  <div className="fade-up-desktop fadeup">
                     <div
                       data-w-id="64205669-bc89-99ef-b9eb-e5b51f1839f3"
                       className="steps_card"
@@ -541,7 +544,7 @@ function FirstSection() {
                   <div className="steps_border-box _2"></div>
                 </div>
                 <div className="steps_card-wrapper _3">
-                  <div className="fade-up-desktop">
+                  <div className="fade-up-desktop fadeup">
                     <div
                       data-w-id="64205669-bc89-99ef-b9eb-e5b51f183a0a"
                       className="steps_card lottie"
@@ -671,7 +674,7 @@ function FirstSection() {
                 <div className="steps_card-wrapper _4">
                   <div
                     data-w-id="1c6ea753-1b90-de87-d736-b6b6224c0167"
-                    className="fade-up-desktop"
+                    className="fade-up-desktop fadeup"
                   >
                     <div
                       data-w-id="64205669-bc89-99ef-b9eb-e5b51f183a1f"

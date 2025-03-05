@@ -215,3 +215,25 @@ section,
 summary {
   display: block;
 }
+
+/* From html */
+
+/* Make text look crisper and more legible in all browsers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.5px;
+}
+
+
+
+/* Global text selection style */
+::selection {
+  background-color: rgba(0, 153, 255, 0.5); /* Royal deep blue */
+  color: #ffffff; /* Gold text */
+}
+::-moz-selection {
+  background-color: #3e4c9e; /* Royal deep blue */
+  color: #ffffff; /* Gold text */
+}

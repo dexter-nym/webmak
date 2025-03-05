@@ -533,6 +533,37 @@
   }
 }
 
+@keyframes translateAnimationIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Define the animation for hover-out */
+@keyframes translateAnimationOut {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.secondary-button:hover .secondary-btn_icon-wrap {
+  animation: translateAnimationIn 0.3s ease;
+}
+
+.secondary-button:not(:hover) .secondary-btn_icon-wrap {
+  animation: translateAnimationOut 0.3s ease;
+}
+
+.button-link.w-inline-block {
+  text-decoration: none !important;
+}
+
 .secondary-button:hover .secondary-btn_icon-wrap {
   animation: translateAnimationIn 0.3s ease;
 }

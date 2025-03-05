@@ -1,12 +1,21 @@
 .section_navbar {
   z-index: 9999;
-  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  /* background-color: rgba(32, 45, 47, 0.5); */
 }
+.section_navbar {
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.section_navbar.scrolled {
+  background-color: rgba(32, 45, 47, 0.6);
+}
+
 .navbar_component {
   background-color: #0000;
   border: 1px #000;
@@ -21,6 +30,7 @@
 .w-nav {
   z-index: 1000;
   position: relative;
+  /* background: #ddd; */
 }
 .navbar_container {
   grid-column-gap: 1rem;
@@ -61,6 +71,7 @@ a {
   color: #05cd77;
 }
 .navbar_menu {
+  justify-self: center;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -90,7 +101,7 @@ a {
   letter-spacing: -0.14px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.4;
 }
@@ -259,7 +270,7 @@ a {
   z-index: 1;
   color: #fff;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-weight: 600;
   line-height: 1.7;
   position: relative;
@@ -298,7 +309,7 @@ a {
   background-color: #fff;
   border-radius: 0.375rem;
   padding: 0.5rem 1.5rem;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-weight: 600;
   box-shadow: 0 20px 24.1px -14px #343a383d;
 }
@@ -364,18 +375,28 @@ a {
   overflow: hidden;
 }
 
+.navbar_menu-item {
+  display: inline-block;
+  position: relative;
+  transition: color 0.25s ease-out;
+}
+.navbar_menu-item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #05cd77;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
 /* Media querries */
 @media screen and (max-width: 991px) {
   #w-node-_222d0760-248b-3869-50ab-c18c51a33bfa-1650fa9c {
     justify-self: start;
-  }
-
-  .w-nav[data-collapse="medium"] .w-nav-menu {
-    display: none;
-  }
-
-  .w-nav[data-collapse="medium"] .w-nav-button {
-    display: block;
   }
 
   .w-nav[data-collapse="medium"] .w-nav-menu {
@@ -7504,7 +7525,7 @@ a {
   }
 }
 
-/* Blye theme */
+/* Blue theme */
 .button-bg-1 {
   z-index: 0;
   border-radius: 0.375rem;
@@ -7521,4 +7542,53 @@ a {
       /* Royal Blue */ rgba(0, 0, 0, 0)
     ),
     #0a0f1a; /* Darker background to enhance the blue glow */
+}
+
+/* Underline */
+.navbar_menu-item {
+  color: #cecece;
+  display: inline-block;
+  position: relative;
+  transition: color 0.25s ease-out;
+  text-decoration: none; /* Remove default underline */
+  padding: 0; /* Ensure no extra spacing */
+}
+/* Underline effect */
+.navbar_menu-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px; /* Place underline exactly below text */
+  left: 0; /* Align with first letter */
+  background-color: #4169e1; /* Royal Blue */
+  transform: scaleX(0); /* Start hidden */
+  transform-origin: left; /* Start from the first letter */
+  transition: transform 0.25s ease-out;
+}
+/* Expand underline from first letter */
+.navbar_menu-item:hover::after {
+  transform: scaleX(1); /* Expand fully */
+}
+/* Shrink from last letter when mouse leaves */
+.navbar_menu-item:not(:hover)::after {
+  transform-origin: right; /* Shrink from last letter */
+  transform: scaleX(0);
+}
+/* Text color change on hover */
+.navbar_menu-item:hover {
+  color: #fff; /* Change text color to white */
+}
+/* Optional: Adjust spacing */
+.navbar_menu-item {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+  display: flex;
+}
+/* Light theme adjustment */
+.navbar_menu-item.is-nav-white {
+  color: #1a2224;
 }

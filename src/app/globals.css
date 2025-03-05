@@ -226,8 +226,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-
-
 /* Global text selection style */
 ::selection {
   background-color: rgba(0, 153, 255, 0.5); /* Royal deep blue */
@@ -236,4 +234,31 @@ body {
 ::-moz-selection {
   background-color: #3e4c9e; /* Royal deep blue */
   color: #ffffff; /* Gold text */
+}
+
+/* Scaleup Animation */
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* 🔹 Prevents elements from showing up briefly before animation */
+.scaleup {
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.7s ease-in, opacity 1s ease-out;
+  will-change: transform, opacity;
+  visibility: hidden; /* Hides element until animation starts */
+}
+
+/* 🔹 Animation starts when element enters viewport */
+.scaleup.visible {
+  visibility: visible; /* Makes element appear smoothly */
+  animation: scaleUp 0.7s ease-out forwards;
 }

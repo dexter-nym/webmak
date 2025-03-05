@@ -1,8 +1,11 @@
 import React from "react";
 import "./FourthSection.css";
 import WhiteArrowButton from "@/components/WhiteArrowButton/WhiteArrowButton";
+import { useIntersection } from "@/hooks/useIntersection";
 
 export default function FourthSection() {
+  useIntersection();
+
   return (
     <section id="services" className="section_solutions">
       <div className="solution_bg">
@@ -30,13 +33,13 @@ export default function FourthSection() {
               <div split-text="true" className="section-info-wrap">
                 <div className="fade-up">
                   <h2 className="section-info_primary-text-light">
-                    Tailored <span class="heading-text-italic">solutions</span>{" "}
+                    Tailored <span class="heading-text-italic">solutions</span>
                     for all&nbsp;your business needs
                   </h2>
                 </div>
                 <div className="fade-in">
                   <p className="sub-title">
-                    From landing page design to enterprise-level web-apps{" "}
+                    From landing page design to enterprise-level web-apps
                   </p>
                 </div>
               </div>
@@ -46,7 +49,7 @@ export default function FourthSection() {
                 data-w-id="c15babbd-3a3b-14e2-8695-d89faad91fcf"
                 className="solutions_card-wrap column"
               >
-                <div className="solutions_card-holder-wrap scale-up">
+                <div className="solutions_card-holder-wrap scaleup">
                   <div className="solutions_card-holder">
                     <div className="solutions_card">
                       <div className="solutions_card_bg">
@@ -216,7 +219,7 @@ export default function FourthSection() {
                 </div>
               </div>
               <div className="solutions_card-wrap column span-1">
-                <div className="solutions_card-holder-wrap scale-up">
+                <div className="solutions_card-holder-wrap scaleup">
                   <div className="solutions_card-holder">
                     <div className="solutions_card verticle">
                       <div className="solutions_card-content webflow-shopify">
@@ -515,7 +518,7 @@ export default function FourthSection() {
               </div>
 
               <div className="solutions_card-wrap column span-3">
-                <div className="solutions_card-holder-wrap scale-up">
+                <div className="solutions_card-holder-wrap scaleup">
                   <div className="solutions_card-holder">
                     <div className="solutions_card mobile-verticle">
                       <div className="solutions_card_bg">
@@ -679,7 +682,7 @@ export default function FourthSection() {
               </div>
 
               <div className="solutions_card-wrap column span-1">
-                <div className="solutions_card-holder-wrap scale-up">
+                <div className="solutions_card-holder-wrap scaleup">
                   <div className="solutions_card-holder">
                     <div className="solutions_card verticle">
                       <div className="solutions_card_bg">
@@ -928,7 +931,7 @@ export default function FourthSection() {
               </div>
 
               <div className="solutions_card-wrap column">
-                <div className="solutions_card-holder-wrap scale-up">
+                <div className="solutions_card-holder-wrap scaleup">
                   <div className="solutions_card-holder">
                     <div className="solutions_card verticle">
                       <div className="solutions_card_bg">

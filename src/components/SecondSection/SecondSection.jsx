@@ -1,8 +1,10 @@
 import React from "react";
 import "./SecondSection.css";
 import WhiteArrowButton from "@/components/WhiteArrowButton/WhiteArrowButton";
-
+import { useIntersection } from "@/hooks/useIntersection";
 function SecondSection() {
+  useIntersection();
+  useIntersection("fadeup");
   return (
     <div className="section_home-case-studies">
       <img
@@ -16,14 +18,14 @@ function SecondSection() {
           <div className="padding-section-large">
             <div className="max-width-case-study center">
               <div className="section-info-wrap case-study">
-                <div className="fade-up bro">
+                <div className="fadeup bro">
                   <h2 className="section-info_primary-text">
                     Unveiling success{" "}
                     <span className="heading-text-italic">stories</span> 50+
                     brands thriving
                   </h2>
                 </div>
-                <div className="fade-in">
+                <div className="fadeup">
                   <p split-text="true" className="sub-title">
                     &nbsp;Explore our curated portfolio of diverse industries
                     from B2B Enterprises to D2C brands
@@ -32,7 +34,7 @@ function SecondSection() {
               </div>
             </div>
             <div
-              className="fade-up"
+              className="fadeup"
               style={{
                 transform:
                   "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;",
@@ -647,7 +649,7 @@ function SecondSection() {
               </div>
             </div>
             <div
-              className="fade-up"
+              className="fadeup"
               style={{
                 transform:
                   "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
@@ -658,7 +660,7 @@ function SecondSection() {
             <div className="home-case-studies-card-wrapper">
               <div className="home-case-studies_collection-wrap w-dyn-list">
                 <div className="home-case-studies_grid grid w-dyn-items">
-                  <div className="home-case-studies_item fade-up w-dyn-item">
+                  <div className="home-case-studies_item fadeup w-dyn-item">
                     <a
                       href="https://www.pepsales.ai/"
                       target="_blank"
@@ -738,7 +740,7 @@ function SecondSection() {
                       </div>
                     </a>
                   </div>
-                  <div className="home-case-studies_item fade-up w-dyn-item">
+                  <div className="home-case-studies_item fadeup w-dyn-item">
                     <a
                       href="https://www.pepsales.ai/"
                       target="_blank"
@@ -818,7 +820,7 @@ function SecondSection() {
                       </div>
                     </a>
                   </div>
-                  <div className="home-case-studies_item fade-up w-dyn-item">
+                  <div className="home-case-studies_item fadeup w-dyn-item">
                     <a
                       href="https://www.pepsales.ai/"
                       target="_blank"
@@ -898,7 +900,7 @@ function SecondSection() {
                       </div>
                     </a>
                   </div>
-                  <div className="home-case-studies_item fade-up w-dyn-item">
+                  <div className="home-case-studies_item fadeup w-dyn-item">
                     <a
                       href="https://www.pepsales.ai/"
                       target="_blank"
@@ -978,7 +980,7 @@ function SecondSection() {
                       </div>
                     </a>
                   </div>
-                  <div className="home-case-studies_item fade-up w-dyn-item">
+                  <div className="home-case-studies_item fadeup w-dyn-item">
                     <a
                       href="https://www.pepsales.ai/"
                       target="_blank"
@@ -1058,7 +1060,7 @@ function SecondSection() {
                       </div>
                     </a>
                   </div>
-                  <div className="home-case-studies_item fade-up w-dyn-item">
+                  <div className="home-case-studies_item fadeup w-dyn-item">
                     <a
                       href="https://www.pepsales.ai/"
                       target="_blank"
@@ -1141,7 +1143,7 @@ function SecondSection() {
                 </div>
               </div>
             </div>
-            <div className="fade-in">
+            <div className="fadeup">
               <div className="home-case-studies_button-wrap">
                 <a href="/case-studies" className="button-link w-inline-block">
                   <button className="white-button">

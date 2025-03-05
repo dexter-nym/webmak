@@ -5,6 +5,7 @@ import { useIntersection } from "@/hooks/useIntersection";
 
 export default function FourthSection() {
   useIntersection();
+  useIntersection("fadeup");
 
   return (
     <section id="services" className="section_solutions">
@@ -31,13 +32,13 @@ export default function FourthSection() {
           <div className="padding-section-large relative">
             <div className="solutions_wrap">
               <div split-text="true" className="section-info-wrap">
-                <div className="fade-up">
+                <div className="fadeup">
                   <h2 className="section-info_primary-text-light">
                     Tailored <span class="heading-text-italic">solutions</span>
                     for all&nbsp;your business needs
                   </h2>
                 </div>
-                <div className="fade-in">
+                <div className="fadeup">
                   <p className="sub-title">
                     From landing page design to enterprise-level web-apps
                   </p>

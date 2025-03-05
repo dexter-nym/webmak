@@ -1,13 +1,16 @@
 import React from "react";
 import "./SeventhSection.css";
+import { useIntersection } from "@/hooks/useIntersection";
 function SeventhSection() {
+  useIntersection();
+  useIntersection("fadeup");
   return (
     <section id="reviews" className="section_testimonial">
       <div className="padding-global">
         <div className="container-large">
           <div className="padding-section-large padding-bottom-testimonial">
             <div className="testimonail_heading">
-              <div className="fade-up">
+              <div className="fadeup">
                 <h2 className="section-info_primary-text">
                   What our clients think
                   <span className="heading-text-italic"> about</span>
@@ -15,7 +18,7 @@ function SeventhSection() {
                 </h2>
               </div>
             </div>
-            <div className="fade-in">
+            <div className="fadeup">
               <div className="testimonail_slider-wrapper">
                 <div>
                   <div className="swiper testimonial-slider-container w-dyn-list swiper-cards swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress">
@@ -624,7 +627,7 @@ function SeventhSection() {
           </div>
         </div>
       </div>
-      <div className="fade-in">
+      <div className="fadeup">
         <div className="result-wraperr">
           <div className="result-wrapper_list w-dyn-list">
             <div

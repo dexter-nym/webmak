@@ -1,8 +1,11 @@
 import React from "react";
 import "./Footer.css";
 import WhiteArrowButton from "@/components/WhiteArrowButton/WhiteArrowButton";
+import { useIntersection } from "@/hooks/useIntersection";
 
 function Footer() {
+  useIntersection();
+  useIntersection("fadeup");
   return (
     <footer class="section_footer">
       <div class="w-embed"></div>

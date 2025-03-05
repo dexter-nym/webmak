@@ -1,8 +1,11 @@
 import React from "react";
 import "./EighthSection.css";
 import BlueArrowButton from "@/components/BlueArrowButton/BlueArrowButton";
+import { useIntersection } from "@/hooks/useIntersection";
 
 function EighthSection() {
+  useIntersection();
+  useIntersection("fadeup");
   return (
     <section
       data-w-id="39d5856a-91b0-bf11-b70b-00b70e15b7d2"
@@ -30,7 +33,7 @@ function EighthSection() {
         <div className="container-large">
           <div className="padding-section-large padding-bottom-0 footer">
             <div className="footer-cta_heading-content">
-              <div className="fade-up">
+              <div className="fadeup">
                 <div split-text="true" className="section-info-wrap">
                   <h2 className="section-info_primary-text-light">
                     Don’t settle for{" "}
@@ -43,14 +46,14 @@ function EighthSection() {
                   </h2>
                 </div>
               </div>
-              <div className="fade-in">
+              <div className="fadeup">
                 <BlueArrowButton txt="Book a call" />
               </div>
             </div>
             <div className="spacer-medium"></div>
             <div className="spacer-medium desktop-hide"></div>
             <div className="footer-cta_list">
-              <div className="fade-up">
+              <div className="fadeup">
                 <div className="icon-text-wrap">
                   <div className="icon-text_icon-wrap">
                     <svg
@@ -73,7 +76,7 @@ function EighthSection() {
                   </div>
                 </div>
               </div>
-              <div className="fade-up">
+              <div className="fadeup">
                 <div className="icon-text-wrap">
                   <div className="icon-text_icon-wrap">
                     <svg
@@ -94,7 +97,7 @@ function EighthSection() {
                   <div className="icon-text_text">Personalized Support</div>
                 </div>
               </div>
-              <div className="fade-up">
+              <div className="fadeup">
                 <div className="icon-text-wrap">
                   <div className="icon-text_icon-wrap">
                     <svg

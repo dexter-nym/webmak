@@ -1,21 +1,24 @@
 import React from "react";
 import "./FifthSection.css";
+import { useIntersection } from "@/hooks/useIntersection";
 
 function FifthSection() {
+  useIntersection();
+  useIntersection("fadeup");
   return (
     <section className="section_integration">
       <div className="padding-global">
         <div className="container-large">
           <div className="padding-section-large-fifth padding-bottom-0">
             <div className="section-info-wrap">
-              <div className="fade-up">
+              <div className="fadeup">
                 <h2 className="section-info_primary-text">
                   Tackling complex{" "}
                   <span className="heading-text-italic">integrations?</span>
                 </h2>
               </div>
               <div className="max-width-large">
-                <div className="fade-in">
+                <div className="fadeup">
                   <p split-text="true" className="sub-title">
                     From intricate challenges to seamless execution, We’ll
                     integrate all your marketing tools and automations with your
@@ -25,7 +28,7 @@ function FifthSection() {
               </div>
             </div>
             <div className="integration_button-row">
-              <div className="scale-up">
+              <div className="scaleup">
                 <div className="integration_button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +68,7 @@ function FifthSection() {
                   <div className="integration_btn-text">Easy automation</div>
                 </div>
               </div>
-              <div className="scale-up">
+              <div className="scaleup">
                 <div className="integration_button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

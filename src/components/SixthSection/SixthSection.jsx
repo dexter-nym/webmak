@@ -1,8 +1,11 @@
 import React from "react";
 import "./SixthSection.css";
 import BlueArrowButton from "@/components/BlueArrowButton/BlueArrowButton";
+import { useIntersection } from "@/hooks/useIntersection";
 
 function SixthSection() {
+  useIntersection();
+  useIntersection("fadeup");
   return (
     <section className="section_secondary-cta background-color-secondary">
       <img
@@ -22,25 +25,28 @@ function SixthSection() {
           <div className="padding-section-medium">
             <div className="secondary-cta_content">
               <div className="text-color-white">
-                <div className="fade-up">
+                <div className="fadeup">
                   <h3
                     split-text="true"
                     className="heading-style-h3 hide-mobile-portrait"
                   >
-                    Your website is your{" "}
-                    <span className="text-color-green">24/7 sales person.</span>{" "}
-                    Don’t just settle for an ordinary one. Go{" "}
-                    <span className="text-style-secondary">beyond</span> with{" "}
-                    <span className="text-color-green">Flowtrix</span>
+                    Your website is your
+                    <span className="text-color-green">
+                      {" "}
+                      24/7 sales person.
+                    </span>{" "}
+                    Don’t just settle for an ordinary one. Go
+                    <span className="text-style-secondary"> beyond</span> with
+                    <span className="text-color-green"> Flowtrix</span>
                   </h3>
                 </div>
-                <div className="fade-up">
+                <div className="fadeup">
                   <h3 split-text="true" className="heading-cta-mobile">
-                    Your website is your{" "}
+                    Your website is your
                     <span className="text-color-green">24/7 sales person.</span>
                   </h3>
                 </div>
-                <div className="fade-up">
+                <div className="fadeup">
                   <h3
                     split-text="true"
                     className="heading-cta-mobile middle-item"
@@ -48,14 +54,14 @@ function SixthSection() {
                     Don’t just settle for an ordinary one.
                   </h3>
                 </div>
-                <div className="fade-up">
+                <div className="fadeup">
                   <h3 split-text="true" className="heading-cta-mobile">
-                    Go <span className="text-style-secondary">beyond</span> with{" "}
+                    Go <span className="text-style-secondary">beyond</span> with
                     <span className="text-color-green">Flowtrix</span>
                   </h3>
                 </div>
               </div>
-              <div className="fade-in">
+              <div className="fadeup">
                 <BlueArrowButton />
                 <div className="secondary-btn_icon-wrap">
                   <svg

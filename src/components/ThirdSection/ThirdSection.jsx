@@ -25,7 +25,7 @@ function ThirdSection() {
         <div className="container-large">
           <div className="padding-section-medium">
             <div className="cta_wrapper">
-              <div className="fade-up">
+              <div className="fadeup">
                 <div className="section-info-wrap">
                   <h2 className="section-info_primary-text-light">
                     Have project in mind? <br />
@@ -33,7 +33,7 @@ function ThirdSection() {
                   </h2>
                 </div>
               </div>
-              <div className="fade-in">
+              <div className="fadeup">
                 <div className="cta_button-wrap">
                   <WhiteArrowButton
                     txt="Book a call"
@@ -43,7 +43,7 @@ function ThirdSection() {
               </div>
             </div>
             <div className="cta_client-wrapper">
-              <div className="fade-up">
+              <div className="fadeup">
                 <div split-text="true" className="cta_client-heading">
                   Our clients are backed by top investors
                 </div>
@@ -51,7 +51,7 @@ function ThirdSection() {
               <div className="cta_client-row">
                 <div
                   id="w-node-c7b5acf3-5ea3-e27f-31d6-8bca7a04f684-e87cbcf0"
-                  className="cta_client-item fade-in"
+                  className="cta_client-item scaleup"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ function ThirdSection() {
                 </div>
                 <div
                   id="w-node-c7b5acf3-5ea3-e27f-31d6-8bca7a04f684-e87cbcf0"
-                  className="cta_client-item fade-in"
+                  className="cta_client-item scaleup"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +147,7 @@ function ThirdSection() {
                 </div>
                 <div
                   id="w-node-c7b5acf3-5ea3-e27f-31d6-8bca7a04f684-e87cbcf0"
-                  className="cta_client-item fade-in"
+                  className="cta_client-item scaleup"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -195,7 +195,7 @@ function ThirdSection() {
                 </div>
                 <div
                   id="w-node-c7b5acf3-5ea3-e27f-31d6-8bca7a04f684-e87cbcf0"
-                  className="cta_client-item fade-in"
+                  className="cta_client-item scaleup"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -243,7 +243,7 @@ function ThirdSection() {
                 </div>
                 <div
                   id="w-node-c7b5acf3-5ea3-e27f-31d6-8bca7a04f684-e87cbcf0"
-                  className="cta_client-item fade-in"
+                  className="cta_client-item scaleup"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

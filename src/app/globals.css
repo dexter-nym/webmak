@@ -262,3 +262,30 @@ body {
   visibility: visible; /* Makes element appear smoothly */
   animation: scaleUp 0.7s ease-out forwards;
 }
+
+/* Fade up Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🔹 Prevents elements from showing up briefly before animation */
+.fadeup {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: transform 0.7s ease-in, opacity 1s ease-out;
+  will-change: transform, opacity;
+  visibility: hidden; /* Hides element until animation starts */
+}
+
+/* 🔹 Animation starts when element enters viewport */
+.fadeup.visible {
+  visibility: visible; /* Makes element appear smoothly */
+  animation: fadeUp 0.7s ease-out forwards;
+}

@@ -1,21 +1,15 @@
-import React from "react";
+"use client";
+
+import { useRef } from "react";
 import "./SeventhSection.css";
-import { useIntersection } from "@/hooks/useIntersection";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useRef } from 'react';
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/navigation"; // ✅ Import Navigation CSS
+import { EffectCoverflow, Navigation } from "swiper/modules";
+
 function SeventhSection() {
-  useIntersection();
-  useIntersection("fadeup");
   const swiperRef = useRef(null);
-
-  // Functions to go to the next/previous slide
-  const goToPrev = () => {
-    swiperRef.current.swiper.slidePrev();
-  };
-
-  const goToNext = () => {
-    swiperRef.current.swiper.slideNext();
-  };
 
   return (
     <section id="reviews" className="section_testimonial">
@@ -31,89 +25,43 @@ function SeventhSection() {
                 </h2>
               </div>
             </div>
-            <div className="fadeup">
-              <div className="swiper-container">
-                <Swiper
-                  ref={swiperRef}
-                  loop={true}
-                  spaceBetween={50}
-                  slidesPerView={1}
-                >
-                  <SwiperSlide>
-                    <div className="testimonial_card">
-                      <div className="testimonial_content">
-                        <div className="testimonial_text w-richtext">
-                          <p>
-                            “Flowtrix blew away past Webflow devs. Fast,
-                            meticulous, and top-notch quality. Our search ends
-                            here! Highly recommended. 10/10🚀”
-                          </p>
-                        </div>
-                        <div className="testimonial-details">
-                          <div>
-                            <p className="testimonial_client-name">
-                              Barny Dillarstone
-                            </p>
-                            <div>
-                              <p className="testimonial_designation">Founder</p>
-                              <p className="testimonial_designation">, </p>
-                              <p className="testimonial_designation">twio</p>
-                            </div>
-                          </div>
-                          <img
-                            src="https://cdn.prod.website-files.com/65fcbd0ae4a1ef93ccf63114/6639325af171809218bbf122_Vector.svg"
-                            loading="lazy"
-                            alt="Company Logo"
-                            className="testimonial_company-logo"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-
-                  {/* Add more SwiperSlide components for more testimonials */}
-                  <SwiperSlide>
-                    <div className="testimonial_card">
-                      <div className="testimonial_content">
-                        <div className="testimonial_text w-richtext">
-                          <p>
-                            “Incredible service! The team was efficient, and we
-                            saw results in no time. Will definitely work
-                            together again. Highly recommend.”
-                          </p>
-                        </div>
-                        <div className="testimonial-details">
-                          <div>
-                            <p className="testimonial_client-name">Jane Doe</p>
-                            <div>
-                              <p className="testimonial_designation">CEO</p>
-                              <p className="testimonial_designation">, </p>
-                              <p className="testimonial_designation">
-                                TechCorp
-                              </p>
-                            </div>
-                          </div>
-                          <img
-                            src="https://cdn.prod.website-files.com/65fcbd0ae4a1ef93ccf63114/6639325af171809218bbf122_Vector.svg"
-                            loading="lazy"
-                            alt="Company Logo"
-                            className="testimonial_company-logo"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
-
-                {/* Custom Navigation Buttons */}
-                <button className="swiper-button-left" onClick={goToPrev}>
-                  &lt; Prev
-                </button>
-                <button className="swiper-button-right" onClick={goToNext}>
-                  Next &gt;
-                </button>
-              </div>
-            </div>
+            {/* <div className="fadeup">
+              <Swiper
+                loop={true}
+                effect="coverflow"
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView="auto"
+                coverflowEffect={{
+                  rotate: 0,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1.5,
+                  slideShadows: false,
+                }}
+                navigation={{
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                }} // Enable navigation buttons
+                onSlideChangeTransitionEnd={(swiper) => {
+                  document
+                    .querySelectorAll(".swiper-slide")
+                    .forEach((slide) => {
+                      slide.style.zIndex = "1"; // Reset all slides behind
+                    });
+                  swiper.slides[swiper.activeIndex].style.zIndex = "10"; // Bring active slide to front
+                }}
+                modules={[EffectCoverflow, Navigation]} // Add Navigation module
+                className="swiper-container"
+              >
+                <SwiperSlide className="slide-content red">1</SwiperSlide>
+                <SwiperSlide className="slide-content blue">2</SwiperSlide>
+                <SwiperSlide className="slide-content green">3</SwiperSlide>
+                <SwiperSlide className="slide-content yellow">4</SwiperSlide>
+                <SwiperSlide className="slide-content purple">5</SwiperSlide>
+              </Swiper>
+            </div> */}
+            <div className="fadeup"></div>
           </div>
         </div>
       </div>

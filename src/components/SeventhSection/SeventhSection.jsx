@@ -7,9 +7,14 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation"; // ✅ Import Navigation CSS
 import { EffectCoverflow, Navigation } from "swiper/modules";
+import cardData from "@/constants/cardData";
+import Card from "@/constants/Card";
+import { useState } from "react";
 
 function SeventhSection() {
   const swiperRef = useRef(null);
+
+  const [cards, setCards] = useState(cardData);
 
   return (
     <section id="reviews" className="section_testimonial">
@@ -61,7 +66,19 @@ function SeventhSection() {
                 <SwiperSlide className="slide-content purple">5</SwiperSlide>
               </Swiper>
             </div> */}
-            <div className="fadeup"></div>
+            <div className="fadeup grid min-h-screen place-items-center ">
+              {cards.map((card) => {
+                return (
+                  <Card
+                    key={card.id}
+                    cards={cards}
+                    setCards={setCards}
+                    originalCards={cardData}
+                    {...card}
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
@@ -364,4 +381,5 @@ function SeventhSection() {
     </section>
   );
 }
+
 export default SeventhSection;

@@ -10,10 +10,6 @@
   z-index: 1;
   position: relative;
 }
-.padding-global {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
 .container-medium,
 .container-small,
 .container-large {

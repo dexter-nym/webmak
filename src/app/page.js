@@ -1,13 +1,13 @@
 "use client";
 
 import Navbar from "@/components/Navbar/Navbar";
-// import Hero from "@/components/Hero/Hero";
-// import FirstSection from "@/components/FirstSection/FirstSection";
-// import SecondSection from "@/components/SecondSection/SecondSection";
-// import ThirdSection from "@/components/ThirdSection/ThirdSection";
-// import FourthSection from "@/components/FourthSection/FourthSection";
-// import FifthSection from "@/components/FifthSection/FifthSection";
-// import SixthSection from "@/components/SixthSection/SixthSection";
+import Hero from "@/components/Hero/Hero";
+import FirstSection from "@/components/FirstSection/FirstSection";
+import SecondSection from "@/components/SecondSection/SecondSection";
+import ThirdSection from "@/components/ThirdSection/ThirdSection";
+import FourthSection from "@/components/FourthSection/FourthSection";
+import FifthSection from "@/components/FifthSection/FifthSection";
+import SixthSection from "@/components/SixthSection/SixthSection";
 import SeventhSection from "@/components/SeventhSection/SeventhSection";
 import EighthSection from "@/components/EighthSection/EighthSection";
 import Footer from "@/components/Footer/Footer";
@@ -154,17 +154,17 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      {/* <Hero /> */}
+      <Hero />
       <div className="main">
         <div className="scroll-trigger">
-          {/* <FirstSection /> */}
-          {/* <SecondSection /> */}
-          {/* <ThirdSection /> */}
+          <FirstSection />
+          <SecondSection />
+          <ThirdSection />
         </div>
-        {/* <FourthSection /> */}
+        <FourthSection />
         <div className="scroll-trigger">
-          {/* <FifthSection /> */}
-          {/* <SixthSection /> */}
+          <FifthSection />
+          <SixthSection />
           <SeventhSection />
         </div>
         <EighthSection />

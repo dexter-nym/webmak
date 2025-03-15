@@ -1,43 +1,93 @@
 const cardData = [
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2370&auto=format&fit=crop",
+    name: "Aarav Sharma",
+    position: "Software Engineer",
+    profileImage: "https://example.com/images/aarav.jpg",
+    review:
+      "Great working environment! I had the opportunity to work with amazing colleagues, explore new technologies, and enhance my skills. The team support here is truly outstanding and encouraging.",
+    rating: 4.8,
   },
   {
     id: 2,
-    url: "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?q=80&w=2235&auto=format&fit=crop",
+    name: "Priya Verma",
+    position: "UI/UX Designer",
+    profileImage: "https://example.com/images/priya.jpg",
+    review:
+      "Creative freedom is amazing! I can experiment with modern UI trends and collaborate with developers who truly understand design principles. It's a perfect place for designers to thrive.",
+    rating: 4.6,
   },
   {
     id: 3,
-    url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2370&auto=format&fit=crop",
+    name: "Rohan Mehta",
+    position: "Project Manager",
+    profileImage: "https://example.com/images/rohan.jpg",
+    review:
+      "Managing projects here is smooth, thanks to excellent teamwork and structured workflows. The leadership encourages innovation and problem-solving, making every challenge an exciting learning experience for me.",
+    rating: 4.7,
   },
   {
     id: 4,
-    url: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?q=80&w=2370&auto=format&fit=crop",
+    name: "Sneha Kapoor",
+    position: "Frontend Developer",
+    profileImage: "https://example.com/images/sneha.jpg",
+    review:
+      "Loved working with the latest technologies! The company invests in continuous learning, ensuring developers stay ahead. The collaborative environment makes even complex tasks feel manageable and rewarding.",
+    rating: 4.5,
   },
   {
     id: 5,
-    url: "https://images.unsplash.com/photo-1574169208507-84376144848d?q=80&w=2370&auto=format&fit=crop",
+    name: "Vikram Joshi",
+    position: "Backend Developer",
+    profileImage: "https://example.com/images/vikram.jpg",
+    review:
+      "Scalable architecture and best coding practices are a priority here. The backend team focuses on efficiency, security, and performance, ensuring smooth development and high-quality applications for users.",
+    rating: 4.9,
   },
   {
     id: 6,
-    url: "https://images.unsplash.com/photo-1518644961665-ed172691aaa3?q=80&w=2370&auto=format&fit=crop",
+    name: "Meera Nair",
+    position: "Product Manager",
+    profileImage: "https://example.com/images/meera.jpg",
+    review:
+      "User-focused development is key here. We prioritize feedback, analyze user behavior, and refine product strategies. It’s a fulfilling experience to create meaningful solutions for real problems.",
+    rating: 4.6,
   },
   {
     id: 7,
-    url: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=2370&auto=format&fit=crop",
+    name: "Kunal Patel",
+    position: "Full Stack Developer",
+    profileImage: "https://example.com/images/kunal.jpg",
+    review:
+      "Challenging yet rewarding experience! I get to work on both frontend and backend, solve complex problems, and continuously improve my skills in an inspiring and supportive team environment.",
+    rating: 4.7,
   },
   {
     id: 8,
-    url: "https://images.unsplash.com/photo-1499257398700-43669759a540?q=80&w=2370&auto=format&fit=crop",
+    name: "Aditi Rao",
+    position: "Marketing Specialist",
+    profileImage: "https://example.com/images/aditi.jpg",
+    review:
+      "Data-driven marketing strategies bring great results. We analyze trends, experiment with campaigns, and focus on customer engagement, ensuring impactful and result-oriented marketing efforts for business growth.",
+    rating: 4.5,
   },
   {
     id: 9,
-    url: "https://images.unsplash.com/photo-1521747116042-5a810fda9664?q=80&w=2370&auto=format&fit=crop",
+    name: "Rahul Singh",
+    position: "DevOps Engineer",
+    profileImage: "https://example.com/images/rahul.jpg",
+    review:
+      "CI/CD pipelines made deployment seamless. The automation tools and cloud infrastructure ensure smooth operations, allowing the team to focus more on development and delivering high-quality software.",
+    rating: 4.8,
   },
   {
     id: 10,
-    url: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?q=80&w=2370&auto=format&fit=crop",
+    name: "Neha Gupta",
+    position: "HR Manager",
+    profileImage: "https://example.com/images/neha.jpg",
+    review:
+      "Employee well-being is a top priority here. From flexible work policies to skill development programs, the company ensures every individual feels valued, motivated, and part of a growing family.",
+    rating: 4.6,
   },
 ];
 

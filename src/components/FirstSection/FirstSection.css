@@ -133,14 +133,6 @@
   font-weight: 600;
   line-height: 1.2;
 }
-.heading-text-italic {
-  word-spacing: -0.5rem;
-  padding-right: 6px;
-  font-family: Libre Baskerville, sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  display: inline;
-}
 .sub-title-border {
   font-family: Inter, sans-serif;
   color: #8c8c8c;

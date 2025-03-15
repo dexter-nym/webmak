@@ -8,14 +8,16 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/navigation"; // ✅ Import Navigation CSS
 import { EffectCoverflow, Navigation } from "swiper/modules";
 import cardData from "@/constants/cardData";
-import Card from "@/constants/Card";
 import { useState } from "react";
+
+// import Card1 from "@/constants/Card1";
+// import Card2 from "@/constants/Card2";
+// import Card from "@/constants/Card";
 
 function SeventhSection() {
   const swiperRef = useRef(null);
 
   const [cards, setCards] = useState(cardData);
-
   return (
     <section id="reviews" className="section_testimonial">
       <div className="padding-global">
@@ -30,7 +32,7 @@ function SeventhSection() {
                 </h2>
               </div>
             </div>
-            {/* <div className="fadeup">
+            <div className="fadeup">
               <Swiper
                 loop={true}
                 effect="coverflow"
@@ -65,8 +67,9 @@ function SeventhSection() {
                 <SwiperSlide className="slide-content yellow">4</SwiperSlide>
                 <SwiperSlide className="slide-content purple">5</SwiperSlide>
               </Swiper>
-            </div> */}
-            <div className="fadeup grid min-h-screen place-items-center ">
+            </div>
+            {/* Card */}
+            {/* <div className="fadeup grid min-h-screen place-items-center ">
               {cards.map((card) => {
                 return (
                   <Card
@@ -78,7 +81,23 @@ function SeventhSection() {
                   />
                 );
               })}
-            </div>
+            </div> */}
+            {/* Card1 */}
+            {/* <div className="fadeup"><Card1 /></div> */}
+            {/* Card 2 */}
+            {/* <div className="fadeup grid min-h-screen place-items-center ">
+              {cards.map((card) => {
+                return (
+                  <Card2
+                    key={card.id}
+                    cards={cards}
+                    setCards={setCards}
+                    originalCards={cardData}
+                    {...card}
+                  />
+                );
+              })}
+            </div> */}
           </div>
         </div>
       </div>

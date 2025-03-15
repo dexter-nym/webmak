@@ -832,9 +832,9 @@ export default function FourthSection() {
                           width="100%"
                           viewBox="0 0 95 96"
                           fill="none"
-                          classsName="revamp-webflow-svg"
+                          className="revamp-webflow-svg"
                         >
-                          <g filter="url(#filter0_di_2338_7847)" class="g-3">
+                          <g filter="url(#filter0_di_2338_7847)" className="g-3">
                             <rect
                               x="17.0693"
                               y="4.86719"
@@ -850,7 +850,7 @@ export default function FourthSection() {
                               clip-rule="evenodd"
                               d="M64.2411 29.0931L52.9495 48.5879L43.2197 48.1339L47.9411 40.0563L47.7467 40.0473C43.9565 44.4607 38.4796 47.2269 30.8441 47.5564L31.2251 39.3911C31.2251 39.3911 36.1023 39.3346 39.1001 36.5023L31.3767 36.1419L31.7764 27.5783L40.4569 27.9834L40.1282 35.0268L40.3227 35.0351L44.1989 28.158L50.7638 28.4643L50.4372 35.4631L50.6316 35.4718L54.6384 28.645L64.2411 29.0931Z"
                               fill="currentColor"
-                              classsName="path-5"
+                              className="path-5"
                             ></path>
                           </g>
                           <defs>

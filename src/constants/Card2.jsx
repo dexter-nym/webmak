@@ -1,8 +1,18 @@
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import cardData from "@/constants/cardData";
-import "@/components/SeventhSection/SeventhSection.css";
+import "./Card2.css";
+import { Star } from "lucide-react"; // Using Lucide icons for the star
 
-const Card = ({ id, url, cards, setCards, originalCards }) => {
+const Card2 = ({
+  id,
+  rating,
+  review,
+  name,
+  position,
+  profileImage,
+  cards,
+  setCards,
+}) => {
   const x = useMotionValue(0);
   const opacity = useTransform(x, [-150, 0, 150], [0, 1, 0]);
 
@@ -38,10 +48,8 @@ const Card = ({ id, url, cards, setCards, originalCards }) => {
   };
 
   return (
-    <motion.img
-      src={url}
-      alt={`Card ${id}`}
-      className="framer-image transition-all duration-500 ease-in-out"
+    <motion.div
+      className="framer-block"
       style={{
         gridRow: 1,
         gridColumn: 1,
@@ -49,17 +57,37 @@ const Card = ({ id, url, cards, setCards, originalCards }) => {
         opacity,
         rotate,
         boxShadow: isFront
-          ? "4px 20px 25px -5px rgb(0 0 0 / 0.6), 0px 8px 10px -6px rgb(0 0 0 / 0.6)"
+          ? "4px 20px 25px -5px rgb(0 0 0 / 0.2), 0px 8px 10px -6px rgb(0 0 0 / 0.2)"
           : undefined,
       }}
-      animate={{
-        scale: isFront ? 1 : 0.98,
-      }}
+      animate={{ scale: isFront ? 1 : 0.98 }}
       drag="x"
       dragConstraints={{ left: -100, right: 100 }}
       onDragEnd={handleDragEnd}
-    />
+    >
+      {/* Rating Section */}
+      <div className="rating-section">
+        <span className="rating">{rating} </span>
+        <Star className="star-icon" size={16} fill="#f5c518" />
+        <p className="rating-text">(Out of 5 stars)</p>
+      </div>
+
+      {/* Review */}
+      <p className="review">{review}</p>
+
+      {/* Quote Symbol */}
+      <div className="quote-symbol">”</div>
+
+      {/* User Info */}
+      <div className="user-info">
+        <div className="user-info-text">
+          <h3 className="user-name">{name}</h3>
+          <p className="user-position">{position}</p>
+        </div>
+        <img src={profileImage} alt={name} className="profile-image" />
+      </div>
+      <div className="bottom-bar"></div>
+    </motion.div>
   );
 };
-
-export default Card;
+export default Card2;

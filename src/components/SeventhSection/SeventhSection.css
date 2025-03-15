@@ -141,7 +141,7 @@ h2 {
     display: block;
   }
 }
-/* 
+
 .swiper-container {
   width: 100%;
   padding: 100px !important;
@@ -196,23 +196,4 @@ h2 {
   ) {
   opacity: 0;
   pointer-events: none;
-} */
-
-/* Second swiper */
-.framer-image {
-  border-radius: 30px;
-  height: 24rem; /* h-96 */
-  width: 18rem; /* w-72 */
-  object-fit: cover; /* object-cover */
-  border-radius: 1rem; /* rounded-2xl */
-  cursor: grab; /* hover:cursor-grab */
-  transform-origin: bottom; /* origin-bottom */
-}
-
-.framer-image:active {
-  cursor: grabbing; /* active:cursor-grabbing */
-}
-
-.swiper-wrapper {
-  display: grid;
 }
